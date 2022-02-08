@@ -1,0 +1,107 @@
+:root{
+  --vermelho:#e50914;
+  --preto:#141414;
+  --branco: #fff;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Elementos base */
+
+body {
+  background: var(--branco);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+header .container{
+  display: flex;
+  flex-direction: row; /*default*/ 
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo{
+  color: var(--preto);
+  font-family: 'Arial Black';
+  font-size: 40px;
+  margin-left: 5px;
+}
+
+header nav a{
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 10px;
+}
+
+header nav a:hover{
+  color:#fff;
+}
+
+/* Arte princípal */
+
+.obra-principal {
+  font-size: 16px;
+  background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/van-gogh-noite-estrelada.jpg');
+  height: 400px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+
+}
+
+.obra-principal .descricao{
+  margin-bottom: 50px;
+}
+
+.obra-principal .titulo{
+  margin-top: 15%;
+  font-size: 50px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+  background-color: rgba(0,0,0,.50);
+  border: none;
+  color: white;
+
+  padding: 15px 30px;
+  border-radius: 5px;
+  margin-right: 10px;
+
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+.botao:hover{
+  background-color: white;
+  color: black;
+
+}
+.botao i{
+  margin-right: 8px;
+}
+
+.container{
+  margin-left: 20px;
+}
+
+.obra-principal .container {
+  width: 70%;
+}
+
+.box-obra{
+  height: 350px;
+ 
+  display: block;
+}
+
